@@ -65,3 +65,11 @@ nav .logoimg {
 .swiper-pagination-bullet-active {
   background: #662D8C;
 }
+nav a {
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #662D8C 0%, #ED1E79);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  font-size: 64px;
+}
