@@ -10,25 +10,48 @@
       <nav>
         <div class="nav-wrapper">
           <a href="index.html" class="brand-logo center"><!--<div class="logoimg"></div>-->Disconf</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="bilo.html">Было</a></li>
-            <li><a href="budet.html">Будет</a></li>
+            <li>
+              <a class="dropdown-trigger" href="#!" data-target="dropdown1">
+                Menu<i class="material-icons right">arrow_drop_down</i>
+              </a>
+            </li>
+
           </ul>
         </div>
       </nav>
-
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#">Команда</a></li>
+        <li><a href="#">Эксперты</a></li>
+        <li><a href="bilo.html">Было</a></li>
+        <li><a href="bilo.html">Было</a></li>
+        <li><a href="#">Кружки</a></li>
+      </ul>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Команда</a></li>
+        <li><a href="#">Эксперты</a></li>
+        <li><a href="bilo.html">Было</a></li>
+        <li><a href="bilo.html">Было</a></li>
+        <li><a href="#">Кружки</a></li>
+      </ul>
       <main>
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><div class="img-swiper" style="background-image: url('img/good.png');"></div></div>
-            <div class="swiper-slide"><div class="img-swiper" style="background-image: url('img/good.png');"></div></div>
-            <div class="swiper-slide"><div class="img-swiper" style="background-image: url('img/good.png');"></div></div>
+            <div class="swiper-slide"><div class="img-swiper" style="background-image: url('img/itstimeto.png');"></div></div>
+            <div class="swiper-slide"><div class="img-swiper" style="background-image: url('img/itstimeto.png');"></div></div>
+            <div class="swiper-slide"><div class="img-swiper" style="background-image: url('img/itstimeto.png');"></div></div>
           </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
           <!-- Add Arrows -->
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
+        </div>
+        <div class="row">
+          <div class="col s10 offset-s2">
+            <div class="main-img-plakat" style="background-image: url('img/good.png');">
+
+            </div>
+          </div>
         </div>
       </main>
 
@@ -44,23 +67,23 @@
       <script type="text/javascript" src="js/materialize.js"></script>
       <script type="text/javascript" src="js/swiper.min.js"></script>
       <script>
-      var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
-        autoplay: {
-          delay: 50000,
-          disableOnInteraction: false,
-        },
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-      </script>
-    </body>
-  </html>
+      $(document).ready(function(){
+       $('.sidenav').sidenav();
+       $(".dropdown-trigger").dropdown();
+       var swiper = new Swiper('.swiper-container', {
+         slidesPerView: 1,
+         autoplay: {
+           delay: 50000,
+           disableOnInteraction: false,
+         },
+         spaceBetween: 30,
+         loop: true,
+         navigation: {
+           nextEl: '.swiper-button-next',
+           prevEl: '.swiper-button-prev',
+         },
+       });
+     });
+    </script>
+  </body>
+</html>
