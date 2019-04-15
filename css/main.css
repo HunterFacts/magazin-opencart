@@ -74,8 +74,20 @@ nav a {
   font-size: 64px;
 }
 .main-img-plakat {
-  width: 80%;
-  height: 500px;
+  width: 100%;
+  padding-top: 30%;
   background-size:contain;
+  background-repeat: no-repeat;
+}
+.command-img {
+  width: 100%;
+  padding-top: 42.857%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.arrow-img {
+  width: 100%;
+  padding-top: 42.857%;
+  background-size: contain;
   background-repeat: no-repeat;
 }

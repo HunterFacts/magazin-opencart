@@ -8,16 +8,108 @@
     <body>
       <nav>
         <div class="nav-wrapper">
-          <a href="index.html" class="brand-logo center"><!--<div class="logoimg"></div>--></a>
+          <a href="index.html" class="brand-logo center"><!--<div class="logoimg"></div>-->Disconf</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="bilo.html">Было</a></li>
-            <li><a href="budet.html">Будет</a></li>
+            <li>
+              <a class="dropdown-trigger" href="#!" data-target="dropdown1">
+                Menu<i class="material-icons right">arrow_drop_down</i>
+              </a>
+            </li>
+
           </ul>
         </div>
       </nav>
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="command.html">Команда</a></li>
+        <li><a href="experts.html">Эксперты</a></li>
+        <li><a href="bilo.html">Было</a></li>
+        <li><a href="bilo.html">Было</a></li>
+        <li><a href="#">Кружки</a></li>
+      </ul>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Команда</a></li>
+        <li><a href="experts.html">Эксперты</a></li>
+        <li><a href="bilo.html">Было</a></li>
+        <li><a href="bilo.html">Было</a></li>
+        <li><a href="#">Кружки</a></li>
+      </ul>
+      <main>
+        <div class="row">
+          <div class="col s12 m8 offset-m2">
+            <div class="row">
+              <div class="col s2">
+                25.03.19
+              </div>
+              <div class="col s2">
+                Иванов Иван Иваныч
+              </div>
+              <div class="col s8">
+                  Расскажет нам о ...
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s2">
+                29.03.19
+              </div>
+              <div class="col s2">
+                Иванов Иван Иваныч
+              </div>
+              <div class="col s8">
+                Расскажет нам о ...
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s8 m6 l2 offset-s2 offset-m3 offset-l5">
+                <div class="arrow-img" style="background-image: url('img/downarrow.png');"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <h2 class="center-align">Возможные темы</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <table>
+                 <thead>
+                   <tr>
+                       <th>Предложено</th>
+                       <th>Тема</th>
+                       <th>Краткое описание</th>
+                   </tr>
+                 </thead>
+
+                 <tbody>
+                   <tr>
+                     <td>24.06.1812</td>
+                     <td>Где найти москву</td>
+                     <td>Сборник от профессионала</td>
+                   </tr>
+                   <tr>
+                     <td>00.00.00</td>
+                     <td>Теория нулей</td>
+                     <td>Сколько нулей в нуле</td>
+                   </tr>
+                   <tr>
+                     <td>00.00.01</td>
+                     <td>Единица среди нулей</td>
+                     <td>Вторая часть повести о нулях</td>
+                   </tr>
+                 </tbody>
+               </table>
+              </div>
+            </div>
+            <div class="row">
+              <a class="waves-effect col s6 offset-s3 waves-light btn-large">Предложить тему</a>
+            </div>
+          </div>
+        </div>
 
 
-      <footer class="page-footer" style="bottom:0;z-index: 9000; position:fixed; width: 100%;">
+      </main>
+
+      <footer class="page-footer" style="bottom:0; position:fixed; width: 100%;">
           <div class="footer-copyright">
             <div class="container">
             © 2019 Луканин Михаил
@@ -25,6 +117,27 @@
             </div>
           </div>
         </footer>
-      <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/swiper.min.js"></script>
+        <script>
+        $(document).ready(function(){
+         $('.sidenav').sidenav();
+         $(".dropdown-trigger").dropdown();
+         var swiper = new Swiper('.swiper-container', {
+           slidesPerView: 1,
+           autoplay: {
+             delay: 50000,
+             disableOnInteraction: false,
+           },
+           spaceBetween: 30,
+           loop: true,
+           navigation: {
+             nextEl: '.swiper-button-next',
+             prevEl: '.swiper-button-prev',
+           },
+         });
+       });
+      </script>
     </body>
   </html>

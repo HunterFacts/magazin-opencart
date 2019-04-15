@@ -8,14 +8,58 @@
     <body>
       <nav>
         <div class="nav-wrapper">
-          <a href="index.html" class="brand-logo center"><div class="logoimg"></div></a>
+          <a href="index.html" class="brand-logo center"><!--<div class="logoimg"></div>-->Disconf</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="bilo.html">Было</a></li>
-            <li><a href="budet.html">Будет</a></li>
+            <li>
+              <a class="dropdown-trigger" href="#!" data-target="dropdown1">
+                Menu<i class="material-icons right">arrow_drop_down</i>
+              </a>
+            </li>
+
           </ul>
         </div>
       </nav>
-
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="command.html">Команда</a></li>
+        <li><a href="experts.html">Эксперты</a></li>
+        <li><a href="bilo.html">Было</a></li>
+        <li><a href="bilo.html">Было</a></li>
+        <li><a href="#">Кружки</a></li>
+      </ul>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Команда</a></li>
+        <li><a href="experts.html">Эксперты</a></li>
+        <li><a href="bilo.html">Было</a></li>
+        <li><a href="bilo.html">Было</a></li>
+        <li><a href="#">Кружки</a></li>
+      </ul>
+      <main>
+        <div class="row">
+          <div class="col s12 m8 offset-m2">
+            <div class="row">
+              <div class="col s12 l4">
+                <div class="video-container">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/zymRNmdzF2k" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col s8 l8">
+                text text
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 l4">
+                <div class="video-container">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/zymRNmdzF2k" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col s8 l8">
+                text text
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
 
       <footer class="page-footer" style="bottom:0; position:fixed; width: 100%;">
           <div class="footer-copyright">
@@ -25,6 +69,27 @@
             </div>
           </div>
         </footer>
-      <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/swiper.min.js"></script>
+        <script>
+        $(document).ready(function(){
+         $('.sidenav').sidenav();
+         $(".dropdown-trigger").dropdown();
+         var swiper = new Swiper('.swiper-container', {
+           slidesPerView: 1,
+           autoplay: {
+             delay: 50000,
+             disableOnInteraction: false,
+           },
+           spaceBetween: 30,
+           loop: true,
+           navigation: {
+             nextEl: '.swiper-button-next',
+             prevEl: '.swiper-button-prev',
+           },
+         });
+       });
+      </script>
     </body>
   </html>
