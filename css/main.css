@@ -64,7 +64,7 @@ nav .logoimg {
 .swiper-pagination-bullet-active {
   background: #662D8C;
 }
-main h3 {
+main h4 {
   text-transform: uppercase;
   background: linear-gradient(45deg, #662D8C 0%, #ED1E79);
   -webkit-background-clip: text;
@@ -94,4 +94,23 @@ main {
 }
 body nav {
       min-height: 130px;
+}
+body .page-footer {
+  bottom:0;
+  position:fixed;
+  width: 100%;
+  background-color: white;
+  padding-top: 0;
+}
+.btn, .btn-large, .btn-small {
+  background-color: #662D8C;
+}
+.btn:hover, .btn-large:hover, .btn-small:hover {
+  background-color: #ED1E79;
+}
+@media only screen and (min-width: 1201px) and (max-width: 1281px) {
+  #main-column {
+    width: 70%;
+    margin: 0 15% 0 15%;
+  }
 }

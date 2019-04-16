@@ -24,4 +24,40 @@ $(document).ready(function(){
    spaceBetween: 30,
    loop: true
  });
+ DateIndex();
 });
+
+function DateIndex (){
+  if ($("div").is("#year")){
+    var date = new Date();
+    var monts = date.getMonth()+1;
+    if (date.getFullYear() > $('#year').text()){
+      $('#main-h4').html("Было");
+    }
+    else if (date.getFullYear() < $('#year').text()){
+      $('#main-h4').html("Скоро");
+    }
+    else if (monts > $('#month').text()){
+      $('#main-h4').html("Было");
+    }
+    else if (monts < $('#month').text()){
+      $('#main-h4').html("Скоро");
+    }
+    else if ($('#day').text() - date.getDate() == -1){
+      $('#main-h4').html("Было вчера");
+    }
+    else if (date.getDate() > $('#day').text()){
+      $('#main-h4').html("Было");
+    }
+    else if ($('#day').text() - date.getDate() == 1){
+      $('#main-h4').html("Уже завтра!");
+    }
+    else if (date.getDate() < $('#day').text()){
+      $('#main-h4').html("Скоро");
+    }
+    else if (date.getDate() == $('#day').text()){
+      $('#main-h4').html("Сегодня!");
+    }
+  }
+
+}

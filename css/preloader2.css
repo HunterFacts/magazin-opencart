@@ -84,11 +84,11 @@
 #discoBallMiddle {
   height: 100%;
   border-radius: 100%;
-  background-color: #111;
+  background-color: #662D8C;
   position: absolute;
-  background: -webkit-linear-gradient(top, #111, #333);
-  background: -moz-linear-gradient(top, #111, #333);
-  background: linear-gradient(top, #111, #333);
+  background: -webkit-linear-gradient(top, #662D8C, #ED1E79);
+  background: -moz-linear-gradient(top, #662D8C, #ED1E79);
+  background: linear-gradient(top, #662D8C, #ED1E79);
   -webkit-animation: rotateDiscoBallMiddle 18s linear infinite;
   animation: rotateDiscoBallMiddle 18s linear infinite;
 }

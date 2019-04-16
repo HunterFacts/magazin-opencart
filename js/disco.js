@@ -43,12 +43,22 @@ for(var t=fuzzy; t<Math.PI; t+=inc) {
 
 function randomColor(type) {
   var c;
-  if(type == "bright") {
-    c = randomNumber(130, 255);
-  } else {
-    c = randomNumber(110, 190);
+  c = randomNumber(1, 5);
+  if (c == 1){
+      return "rgb(" + 102 + "," + 45 + "," + 140 + ")";
   }
-  return "rgb(" + c + "," + c + "," + c + ")";
+  else if (c==2){
+      return "rgb(" + 168 + "," + 124 + "," + 198 + ")";
+  }
+  else if (c==3){
+      return "rgb(" + 93 + "," + 40 + "," + 129 + ")";
+  }
+  else if (c==4){
+      return "rgb(" + 237 + "," + 30 + "," + 121 + ")";
+  }
+  else {
+      return "rgb(" + 246 + "," + 128 + "," + 180 + ")";
+  }
 }
 
 function randomNumber(min, max) {
