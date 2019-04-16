@@ -10,7 +10,23 @@
     <body>
       <nav>
         <div class="nav-wrapper">
-          <a href="index.html" class="brand-logo center anim-a"><!--<div class="logoimg"></div>-->Disconf</a>
+              <a href="index.html" class="brand-logo center anim-a">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/1.png');"></div></div>
+                    <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/2.png');"></div></div>
+                    <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/4.png');"></div></div>
+                    <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/5.png');"></div></div>
+                    <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/6.png');"></div></div>
+                    <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/7.png');"></div></div>
+                    <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/8.png');"></div></div>
+                    <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/9.png');"></div></div>
+                  </div>
+                </div>
+
+              </a>
+          </div>
+
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
             <li>
@@ -37,19 +53,11 @@
         <li><a href="#">Кружки</a></li>
       </ul>
       <main>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><div class="img-swiper" style="background-image: url('img/itstimeto.png');"></div></div>
-            <div class="swiper-slide"><div class="img-swiper" style="background-image: url('img/itstimeto.png');"></div></div>
-            <div class="swiper-slide"><div class="img-swiper" style="background-image: url('img/itstimeto.png');"></div></div>
-          </div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
+
         <div class="row">
           <div class="col s8 offset-s2">
-            <div class="main-img-plakat" style="background-image: url('img/good.png');">
+            <h3 class="center-align">Скоро</h3>
+            <div class="main-img-plakat" style="background-image: url('img/disconf-test.png');">
 
             </div>
           </div>
@@ -95,15 +103,11 @@
        var swiper = new Swiper('.swiper-container', {
          slidesPerView: 1,
          autoplay: {
-           delay: 50000,
+           delay: 9500,
            disableOnInteraction: false,
          },
          spaceBetween: 30,
-         loop: true,
-         navigation: {
-           nextEl: '.swiper-button-next',
-           prevEl: '.swiper-button-prev',
-         },
+         loop: true
        });
      });
     </script>

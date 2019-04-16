@@ -23,16 +23,15 @@
 
 nav .logoimg {
   margin: 3px 0 3px 0;
-  height: 90px;
-  background-image: url(../img/logodisconf.png);
-  width: 90px;
+  width: 400px;
+  height: 129px;
   position: relative;
   z-index: 2000;
   background-size: contain;
 }
 .swiper-container {
-  width: 666px;
-  height: 197px;
+  width: 400px;
+  height: 129px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -65,17 +64,19 @@ nav .logoimg {
 .swiper-pagination-bullet-active {
   background: #662D8C;
 }
-nav a {
+main h3 {
   text-transform: uppercase;
   background: linear-gradient(45deg, #662D8C 0%, #ED1E79);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #0B2349;
-  font-size: 64px;
+}
+main {
+  margin-top: 15px;
 }
 .main-img-plakat {
   width: 100%;
-  padding-top: 59%;
+  padding-top: 68%;
   background-size:contain;
   background-repeat: no-repeat;
 }
@@ -90,4 +91,7 @@ nav a {
   padding-top: 42.857%;
   background-size: contain;
   background-repeat: no-repeat;
+}
+body nav {
+      min-height: 130px;
 }
