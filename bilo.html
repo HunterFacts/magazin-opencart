@@ -58,23 +58,45 @@
         <div class="row">
           <div class="col s12 m8 offset-m2">
             <div class="row">
-              <div class="col s12 l4">
-                <div class="video-container">
-                  <iframe width="853" height="480" src="https://www.youtube.com/embed/zymRNmdzF2k" frameborder="0" allowfullscreen></iframe>
+              <div class="col s12">
+                <ul class="tabs">
+                  <li class="tab col s3"><a class="active" href="#develop">Разработчики</a></li>
+                  <li class="tab col s3"><a href="#analytics">Аналитики</a></li>
+                </ul>
+              </div>
+              <div id="develop" class="col s12">
+                <div class="row">
+                  <div class="col s12 l4">
+                    <div class="video-container">
+                      <iframe width="853" height="480" src="https://www.youtube.com/embed/zymRNmdzF2k" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="col s8 l8">
+                    text text
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l4">
+                    <div class="video-container">
+                      <iframe width="853" height="480" src="https://www.youtube.com/embed/zymRNmdzF2k" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="col s8 l8">
+                    text text
+                  </div>
                 </div>
               </div>
-              <div class="col s8 l8">
-                text text
-              </div>
-            </div>
-            <div class="row">
-              <div class="col s12 l4">
-                <div class="video-container">
-                  <iframe width="853" height="480" src="https://www.youtube.com/embed/zymRNmdzF2k" frameborder="0" allowfullscreen></iframe>
+              <div id="analytics" class="col s12">
+                <div class="row">
+                  <div class="col s12 l4">
+                    <div class="video-container">
+                      <iframe width="853" height="480" src="https://www.youtube.com/embed/zymRNmdzF2k" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="col s8 l8">
+                    text text
+                  </div>
                 </div>
-              </div>
-              <div class="col s8 l8">
-                text text
               </div>
             </div>
           </div>
@@ -99,36 +121,6 @@
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/materialize.js"></script>
         <script type="text/javascript" src="js/swiper.min.js"></script>
-
-        <script>
-        $('#cubik-preloader').fadeIn();
-        $(document).ready(function(){
-          setTimeout(function(){
-
-            $('#cubik-preloader').fadeOut();
-          },2000);
-         $('.dropdown-content li a, .anim-a').click(function(event){
-        		event.preventDefault();
-        		linkLocation = this.href;
-        		$("body").fadeOut(1000, redirectPage);
-        	});
-
-        	function redirectPage() {
-        		window.location = linkLocation;
-        	}
-         $('.sidenav').sidenav();
-         $(".dropdown-trigger").dropdown();
-         var swiper = new Swiper('.swiper-container', {
-           slidesPerView: 1,
-           autoplay: {
-             delay: 9500,
-             disableOnInteraction: false,
-           },
-           spaceBetween: 30,
-           loop: true
-         });
-       });
-      </script>
-
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
   </html>
