@@ -9,7 +9,7 @@
     <body>
       <nav>
         <div class="nav-wrapper">
-          <a href="index.html" class="brand-logo center"><!--<div class="logoimg"></div>-->Disconf</a>
+          <a href="index.html" class="brand-logo center anim-a"><!--<div class="logoimg"></div>-->Disconf</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
             <li>
@@ -87,7 +87,21 @@
       <script type="text/javascript" src="js/materialize.js"></script>
       <script type="text/javascript" src="js/swiper.min.js"></script>
       <script>
+      $('#cubik-preloader').fadeIn();
       $(document).ready(function(){
+        setTimeout(function(){
+
+          $('#cubik-preloader').fadeOut();
+        },2000);
+       $('.dropdown-content li a, .anim-a').click(function(event){
+      		event.preventDefault();
+      		linkLocation = this.href;
+      		$("body").fadeOut(1000, redirectPage);
+      	});
+
+      	function redirectPage() {
+      		window.location = linkLocation;
+      	}
        $('.sidenav').sidenav();
        $(".dropdown-trigger").dropdown();
        var swiper = new Swiper('.swiper-container', {
