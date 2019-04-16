@@ -1,15 +1,34 @@
 <!DOCTYPE html>
   <html>
     <head>
+      <link type="text/css" rel="stylesheet" href="css/preloader2.css"  media="screen,projection"/>
+
       <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/swiper.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
+
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
       <nav>
         <div class="nav-wrapper">
-          <a href="index.html" class="brand-logo center"><!--<div class="logoimg"></div>-->Disconf</a>
+              <a href="index.html" class="brand-logo center anim-a">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/1.png');"></div></div>
+                    <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/2.png');"></div></div>
+                    <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/4.png');"></div></div>
+                    <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/5.png');"></div></div>
+                    <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/6.png');"></div></div>
+                    <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/7.png');"></div></div>
+                    <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/8.png');"></div></div>
+                    <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/9.png');"></div></div>
+                  </div>
+                </div>
+
+              </a>
+          </div>
+
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
             <li>
@@ -22,15 +41,15 @@
         </div>
       </nav>
       <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#">Команда</a></li>
-        <li><a href="#">Эксперты</a></li>
+        <li><a href="command.html">Команда</a></li>
+        <li><a href="experts.html">Эксперты</a></li>
         <li><a href="bilo.html">Было</a></li>
-        <li><a href="bilo.html">Было</a></li>
+        <li><a href="budet.html">Будет</a></li>
         <li><a href="#">Кружки</a></li>
       </ul>
       <ul class="sidenav" id="mobile-demo">
         <li><a href="#">Команда</a></li>
-        <li><a href="#">Эксперты</a></li>
+        <li><a href="experts.html">Эксперты</a></li>
         <li><a href="bilo.html">Было</a></li>
         <li><a href="bilo.html">Было</a></li>
         <li><a href="#">Кружки</a></li>
@@ -93,9 +112,17 @@
           </div>
         </div>
       </footer>
+      <div id="cubik-preloader">
+        <div id="discoBallLight"></div>
+        <div id="discoBall">
+          <div id="discoBallMiddle"></div>
+        </div>
+      </div>
+      <script type="text/javascript" src="js/disco.js"></script>
       <script type="text/javascript" src="js/jquery.js"></script>
       <script type="text/javascript" src="js/materialize.js"></script>
       <script type="text/javascript" src="js/swiper.min.js"></script>
+
       <script>
       $('#cubik-preloader').fadeIn();
       $(document).ready(function(){
@@ -117,17 +144,14 @@
        var swiper = new Swiper('.swiper-container', {
          slidesPerView: 1,
          autoplay: {
-           delay: 50000,
+           delay: 9500,
            disableOnInteraction: false,
          },
          spaceBetween: 30,
-         loop: true,
-         navigation: {
-           nextEl: '.swiper-button-next',
-           prevEl: '.swiper-button-prev',
-         },
+         loop: true
        });
      });
     </script>
+
   </body>
 </html>
