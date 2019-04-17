@@ -14,6 +14,7 @@ $(document).ready(function(){
     window.location = linkLocation;
   }
  $('.sidenav').sidenav();
+ $('.collapsible').collapsible();
  $(".dropdown-trigger").dropdown();
  var swiper = new Swiper('.swiper-container', {
    slidesPerView: 1,

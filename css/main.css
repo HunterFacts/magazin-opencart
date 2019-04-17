@@ -114,3 +114,9 @@ body .page-footer {
     margin: 0 15% 0 15%;
   }
 }
+body .afisha {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20%;
+}
