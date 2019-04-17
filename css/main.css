@@ -120,3 +120,13 @@ body .afisha {
   top: 0;
   width: 20%;
 }
+body .afisha li, body .afisha .collapsible-header{
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #662D8C 0%, #ED1E79);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+}
+body .afisha .collapsible-body{
+  padding:0;
+}
