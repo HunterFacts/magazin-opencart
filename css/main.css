@@ -95,6 +95,19 @@ main {
 body nav {
       min-height: 130px;
 }
+body nav ul a {
+  font-size: 1.5rem;
+
+}
+#index-next {
+  font-size: 1.5rem;
+}
+.dropdown-content li {
+  line-height: 1.5rem;
+}
+.dropdown-content li a{
+  font-size: 14.5px;
+}
 body .page-footer {
   bottom:0;
   position:fixed;
@@ -120,6 +133,10 @@ body .afisha {
   top: 0;
   width: 20%;
 }
+body .afisha .collapsible{
+  box-shadow: none;
+}
+
 body .afisha li, body .afisha .collapsible-header{
   text-transform: uppercase;
   background: linear-gradient(45deg, #662D8C 0%, #ED1E79);
@@ -129,4 +146,114 @@ body .afisha li, body .afisha .collapsible-header{
 }
 body .afisha .collapsible-body{
   padding:0;
+}
+#lents #lent-left {
+  height: 160px;
+  width: 400px;
+  background-image: url(../img/left_lenta.png);
+  position: fixed;
+  top: 40vh;
+  left:-230px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 45px;
+  transition: all 0.7s ease;
+}
+
+#lents #lent-left:hover {
+left: -100px;
+}
+#lents #lent-left:hover span {
+opacity: 1;
+}
+#lents #lent-left span {
+  max-width: 30px;
+  position: relative;
+  margin-left: 110px;
+  font-size:36px;
+  color: white;
+  opacity: 0.01;
+
+}
+#lents #lent-right {
+  height: 160px;
+  width: 400px;
+  background-image: url(../img/right_lenta_var2.png);
+  position: fixed;
+  top: 40vh;
+  right: -240px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 45px;
+  transition: all 0.7s ease;
+}
+#lents #lent-right:hover {
+right: -100px;
+}
+#lents #lent-right:hover span {
+  opacity: 1;
+}
+#lents #lent-right span {
+  max-width: 30px;
+  position: relative;
+  margin-left: 120px;
+  font-size:36px;
+  color: white;
+  opacity: 0.01;
+
+}
+.expert {
+  position: relative;
+}
+.card-panel .number-of-performances {
+  position: absolute;
+  right: 1%;
+  color: grey;
+  font-size: 11px;
+}
+#modal-experts-content h4, #modal-team-content h4 {
+  text-align: center;
+}
+.modal-experts, #modal2 {
+  max-height: 90%;
+}
+.modal-be-content h6 {
+  font-size: 1.4rem;
+}
+.modal-be-content h5 {
+  text-align: center;
+}
+.modal-be-content .date-be{
+  color: grey;
+  width: 100%;
+  text-align: center;
+}
+.tabs {
+  margin-bottom: 20px;
+}
+.tabs .indicator {
+  background: linear-gradient(45deg, #662D8C 0%, #ED1E79);
+}
+body .tabs .tab a:focus, .tabs .tab a:focus.active {
+  background-color: rgba(102, 45, 140, 0.2);
+}
+.tabs .tab a {
+ font-size: 18px;
+  background: linear-gradient(45deg, #662D8C 0%, #ED1E79);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.be {
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.be:hover {
+  background: linear-gradient(45deg, 	rgba(102, 45, 140, 0.1) 0%, 	rgba(237, 30, 121, 0.1));
+}
+.tr-will-be, .item-be {
+  cursor: pointer;
+}
+.tr-will-be:hover {
+  background: linear-gradient(45deg, 	rgba(102, 45, 140, 0.1) 0%, 	rgba(237, 30, 121, 0.1));
 }

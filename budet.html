@@ -55,29 +55,92 @@
         <li><a href="bilo.html">Было</a></li>
         <li><a href="#">Кружки</a></li>
       </ul>
+
+      <div id="modal1" class="modal modal-be-content">
+        <div id="modal-will-be" class="modal-content">
+          <div class="row">
+            <div class="col s4">
+              <img src="./img/skoro.png" alt="" class="responsive-img">
+              <h5>Кто такие синицы?</h5>
+              <div class="date-be">Начало: 25.04.2090</div>
+            </div>
+            <div class="col s8">
+              <h6>Описание1</h6>
+              <span>Это птички, итак понятно было, но по этому еще и ролик выпустили, но правда там шарик крутиться, но ничего - исправимся!</span>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat"><i class="material-icons left">close</i>Закрыть</a>
+        </div>
+      </div>
+
+      <div id="modal2" class="modal">
+        <form>
+          <div class="modal-content">
+            <div class="row">
+              <h5>Заполните поля</h5>
+                 <div class="row">
+                   <div class="input-field col s12">
+                     <input data-length="100" placeholder="Иванов Иван" id="first_name" type="text" class="validate">
+                     <label for="first_name">Фамилия, имя</label>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="input-field col s12">
+                     <input data-length="100" id="theme" type="text" class="validate">
+                     <label for="theme">Ваша тема</label>
+                   </div>
+                 </div>
+                 <div class="row">
+                    <div class="input-field col s12">
+                      <textarea data-length="255" id="comment" class="materialize-textarea"></textarea>
+                      <label for="comment">Описание</label>
+                    </div>
+                  </div>
+             </div>
+          </div>
+          <div class="modal-footer">
+            <a class="btn waves-effect waves-light" id="submit-team" href="#" onclick="SubmitWillBe();">Отправить
+             <i class="material-icons right">send</i>
+           </a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Закрыть</a>
+          </div>
+        </form>
+      </div>
+
       <main>
         <div class="row">
           <div class="col s12 m8 offset-m2">
             <div class="row">
-              <div class="col s2">
-                25.03.19
-              </div>
-              <div class="col s2">
-                Иванов Иван Иваныч
-              </div>
-              <div class="col s8">
-                  Расскажет нам о ...
-              </div>
-            </div>
-            <div class="row">
-              <div class="col s2">
-                29.03.19
-              </div>
-              <div class="col s2">
-                Иванов Иван Иваныч
-              </div>
-              <div class="col s8">
-                Расскажет нам о ...
+              <div class="col s12">
+                <table>
+                 <thead>
+                   <tr>
+                       <th>Дата начала</th>
+                       <th>Автор</th>
+                       <th>Тема</th>
+                       <th>Краткое описание</th>
+                   </tr>
+                 </thead>
+
+                 <tbody>
+                   <tr class="tr-will-be" onclick="WillBeModal(1);">
+                     <td>15.05.2019</td>
+                     <td>Человек</td>
+                     <td>DI-КОНТЕЙНЕР UNITY</td>
+                     <td>Отсутствует</td>
+                   </tr>
+                   <tr class="tr-will-be" onclick="WillBeModal(2);">
+                     <td>17.07.2019</td>
+                     <td>Человек</td>
+                     <td>ТЕСТЫ НА XUNIT</td>
+                     <td>Отсутствует</td>
+                   </tr>
+                 </tbody>
+               </table>
               </div>
             </div>
             <div class="row">
@@ -89,6 +152,9 @@
               <div class="col s12">
                 <h2 class="center-align">Возможные темы</h2>
               </div>
+            </div>
+            <div class="row">
+              <a data-target="modal2"  class="modal-trigger waves-effect col s6 offset-s3 waves-light btn-large" >Предложить тему</a>
             </div>
             <div class="row">
               <div class="col s12">
@@ -121,9 +187,7 @@
                </table>
               </div>
             </div>
-            <div class="row">
-              <a class="waves-effect col s6 offset-s3 waves-light btn-large">Предложить тему</a>
-            </div>
+
           </div>
         </div>
 

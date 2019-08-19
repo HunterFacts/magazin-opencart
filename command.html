@@ -55,50 +55,110 @@
         <li><a href="bilo.html">Было</a></li>
         <li><a href="#">Кружки</a></li>
       </ul>
+
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <div class="row">
+            <h5>Введите свои данные</h5>
+             <form class="col s12">
+               <div class="row">
+                 <div class="input-field col s12">
+                   <input data-length="100" placeholder="Иванов Иван" id="first_name" type="text" class="validate">
+                   <label for="first_name">Фамилия, имя</label>
+                 </div>
+               </div>
+               <div class="row">
+                  <div class="input-field col s12">
+                    <textarea data-length="255" id="comment" class="materialize-textarea"></textarea>
+                    <label for="comment">Комментарий</label>
+                  </div>
+                </div>
+                <div class="row">
+                   <div class="input-field col s12">
+                     <a class="btn waves-effect waves-light" id="submit-team" href="#" onclick="SubmitTeam();" >Отправить
+                      <i class="material-icons right">send</i>
+                    </a>
+                   </div>
+                 </div>
+             </form>
+           </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Отменить</a>
+        </div>
+      </div>
+
+      <div id="modal2" class="modal">
+        <div id="modal-team-content" class="modal-content">
+
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Закрыть</a>
+        </div>
+      </div>
+
       <main>
         <div class="row">
           <div class="col s12 m8 offset-m2">
             <div class="row">
               <div class="col s12">
                 <div class="command-img" style="background-image: url('img/command.jpg');"></div>
-                <h5>Привет, мы команда Disconf</h5>
-                <h5>Почему мы это делаем ...</h5>
-                <h5>Для чего мы это делаем...</h5>
-                <h5>Что мы хотим дальше...</h5>
-                <a class="waves-effect col s6 offset-s3 waves-light btn-large">Хочу в комманду</a>
+                <p>Привет! Мы команда Disconf.</p>
+                <p>Что такое Disconf? Это конференция нашего департамента информационных систем. DIS-CONF :)</p>
+                <p>Мы организуем конференции для обмена опытом между нашими специалистами, для того, чтоб каждый мог узнать что-то новое, интересное и полезное!</p>
+                <p>Disconf - это возможность попробовать себя в качестве оратора. Возможность познакомиться с проектами нашего Департамента. Возможность углубиться в тему и помочь другим разобраться.</p>
+                <p>Мы помогаем спланировать выступление, подготовить презентацию, организовать репетицию с участием экспертов, собрать аудиторию и обработать видео.</p>
+                <h6>Частые вопросы:</h6>
+                <p>1. Кто может выступить?
+                  <br/>Любой сотрудник ДИС. <br /><br />
+                  2. Как долго нужно проработать в ДИС, чтоб можно было выступить?<br /> Минимум - один день.<br /><br />
+                  Если Вам есть, что сказать, или интересна какая-то тема, в которой хочется разобраться и поделиться - велком!</p>
+                <a data-target="modal1" id="command-btn" class="modal-trigger waves-effect col s6 offset-s3 waves-light btn-large">Хочу в комманду</a>
               </div>
             </div>
             <div class="row">
               <div class="col s12">
                 <h3>Немного о каждом</h3>
               </div>
-              <div class="col s12">
-                <div class="card-panel grey lighten-5 z-depth-1">
+              <div class="col s12 l6">
+                <a style="cursor: pointer;" onclick="ModalTeam(2);">
+                <div class="card-panel expert grey lighten-5 z-depth-1">
                   <div class="row valign-wrapper">
                     <div class="col s2">
                       <img src="img/human.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s10">
+                      <h6>Иванов Иван</h6>
                       <span class="black-text">
-                        This is a square image. Add the "circle" class to it to make it appear circular.
+                        Мужик с большой буквы
                       </span>
                     </div>
                   </div>
+                  <div class="number-of-performances">
+                    Количество выступлений: <b>99</b>
+                  </div>
                 </div>
+                </a>
               </div>
-              <div class="col s12">
-                <div class="card-panel grey lighten-5 z-depth-1">
+              <div class="col s12 l6">
+                <a style="cursor: pointer;" onclick="ModalTeam(2);">
+                <div class="card-panel expert grey lighten-5 z-depth-1">
                   <div class="row valign-wrapper">
                     <div class="col s2">
                       <img src="img/human.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s10">
+                      <h6>Иванова Настя</h6>
                       <span class="black-text">
-                        This is a square image. Add the "circle" class to it to make it appear circular.
+                        Женщина с большой буквы
                       </span>
                     </div>
                   </div>
+                  <div class="number-of-performances">
+                    Количество выступлений: <b>99</b>
+                  </div>
                 </div>
+                </a>
               </div>
             </div>
           </div>

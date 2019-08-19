@@ -55,40 +55,59 @@
         <li><a href="bilo.html">Было</a></li>
         <li><a href="#">Кружки</a></li>
       </ul>
+
+      <div id="modal1" class="modal modal-experts">
+        <div id="modal-experts-content" class="modal-content">
+
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Закрыть</a>
+        </div>
+      </div>
+
       <main>
         <div class="row">
           <div class="col s12 m8 offset-m2">
             <div class="row">
-              <div class="col s12">
-                <h3>Эксперты</h3>
-              </div>
               <div class="col s12 l6">
-                <div class="card-panel grey lighten-5 z-depth-1">
+                <a style="cursor: pointer;" onclick="ModalExperts(1);">
+                <div class="card-panel expert grey lighten-5 z-depth-1">
                   <div class="row valign-wrapper">
                     <div class="col s2">
                       <img src="img/human.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s10">
+                      <h6>Иванов Иван</h6>
                       <span class="black-text">
-                        This is a square image. Add the "circle" class to it to make it appear circular.
+                        <div class="chip">Ember-Flexberry</div><div class="chip">Ember</div><div class="chip">ASP.NET</div>
                       </span>
                     </div>
                   </div>
+                  <div class="number-of-performances">
+                    Количество выступлений: <b>3</b>
+                  </div>
                 </div>
+                </a>
               </div>
               <div class="col s12 l6">
-                <div class="card-panel grey lighten-5 z-depth-1">
+                <a style="cursor: pointer;" onclick="ModalExperts(2);">
+                <div class="card-panel expert grey lighten-5 z-depth-1">
                   <div class="row valign-wrapper">
                     <div class="col s2">
                       <img src="img/human.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s10">
+                      <h6>Иванова Настя</h6>
                       <span class="black-text">
-                        This is a square image. Add the "circle" class to it to make it appear circular.
+                        <div class="chip">Ember-Flexberry</div><div class="chip">Ember</div><div class="chip">ASP.NET</div>
                       </span>
                     </div>
                   </div>
+                  <div class="number-of-performances">
+                    Количество выступлений: <b>1</b>
+                  </div>
                 </div>
+                </a>
               </div>
             </div>
           </div>
