@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Disconf</title>
-    <link type="text/css" rel="stylesheet" href="css/preloader2.css" media="screen,projection" />
 
     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/swiper.min.css"  media="screen,projection"/>
@@ -12,112 +11,424 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
-      <nav>
+    <nav id="top">
+      <div class="row">
+        <div class="col s12 xl10 offset-xl1">
           <div class="nav-wrapper">
-              <a href="index.html" class="brand-logo center anim-a">
-                  <div class="swiper-container">
-                      <div class="swiper-wrapper">
-                          <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/new/1.png');"></div></div>
-                          <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/new/2.png');"></div></div>
-                          <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/new/4.png');"></div></div>
-                          <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/new/5.png');"></div></div>
-                          <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/new/6.png');"></div></div>
-                          <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/new/7.png');"></div></div>
-                          <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/new/8.png');"></div></div>
-                          <div class="swiper-slide"><div class="logoimg" style="background-image: url('img/header/new/9.png');"></div></div>
-                      </div>
-                  </div>
-
-            </a>
-        </div>
-
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li>
-              <a class="dropdown-trigger" href="#!" data-target="dropdown1">Меню<i class="material-icons right">arrow_drop_down</i>
-              </a>
-            </li>
-          </ul>
-    </nav>
-    <ul id="dropdown1" class="dropdown-content">
-      <li><a href="./">DISCONF</a></li>
-      <li><a href="command.html">Команда</a></li>
-      <li><a href="experts.html">Эксперты</a></li>
-      <li><a href="bilo.html">Было</a></li>
-      <li><a href="budet.html">Будет</a></li>
-      <li><a href="#">Кружки</a></li>
-    </ul>
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="#">Команда</a></li>
-      <li><a href="experts.html">Эксперты</a></li>
-      <li><a href="bilo.html">Было</a></li>
-      <li><a href="bilo.html">Было</a></li>
-      <li><a href="#">Кружки</a></li>
-    </ul>
-
-    <div id="lents">
-      <div id="lent-left"><a href="bilo.html"><span>Что было</span></a></div>
-      <div id="lent-right"><a href="budet.html"><span>Что будет</span></a></div>
-    </div>
-
-    <div class="afisha">
-        <ul class="collapsible">
-            <li class="active">
-                <div class="collapsible-header" id="index-next"><i style="font-size: 2rem;" class="medium material-icons">whatshot</i>Далее</div>
-                <div class="collapsible-body">
-                    <ul class="collection">
-                      <li onclick="WillBeModal(1);" class="collection-item item-be">15.05 - Di-контейнер Unity</li>
-                      <li onclick="WillBeModal(2);" class="collection-item item-be">17.07 - Тесты на xUnit</li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </div>
-
-    <div id="modal1" class="modal modal-be-content">
-      <div id="modal-will-be" class="modal-content">
-        <div class="row">
-          <div class="col s4 offset-s4">
-            <img src="./img/skoro.png" alt="" class="responsive-img">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><span class="fake-link"><i class="material-icons tiny left">mail</i>1234@mail.ru</span></li>
+              <li><span class="fake-link"><i class="material-icons tiny left">local_phone</i>123456789</span></li>   
+              <li><a href="{{ shopping_cart }}" title="{{ text_shopping_cart }}"><i class="material-icons tiny left">shopping_cart</i> <span class="hidden-xs hidden-sm hidden-md">Корзина</span></a></li>
+            </ul>
+            <ul id="nav-mobile2" class="left hide-on-med-and-down">
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Оплата и доставка</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
           </div>
         </div>
-        <h5>Кто такие синицы?</h5>
-        <div class="date-be">Начало: 25.04.2090</div>
-        <h6>Описание</h6>
-        <span>Это птички, итак понятно было, но по этому еще и ролик выпустили, но правда там шарик крутиться, но ничего - исправимся!</span>
       </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat"><i class="material-icons left">close</i>Закрыть</a>
-      </div>
-    </div>
-
-    <main>
+    </nav>
+    <header>
+      <nav>
         <div class="row">
-            <div id="main-column" class="col s12 m8 xl6 offset-m2 offset-xl3">
-                <h4 id="main-h4" class="center-align">Скоро</h4>
-                <div style="display: none;">
-                    <div id="day">15</div><div id="month">05</div><div id="year">2019</div>
+          <div class="col s12 xl10 offset-xl1">
+            <div class="nav-wrapper">
+                <div id="logo" class="left">
+                  <a href="img/logo.png"><img src="img/logo.png" title="lorem" alt="lorem" class="img-responsive" /></a>
                 </div>
-                    <div class="main-img-plakat" style="background-image: url('img/good.png');">
+                <div class="row search-row">
+                  <div id="search" class="input-field col s10">
+                    <i class="material-icons tiny left search-icon">search</i>
+                  <input type="text" id="searchfield" name="search" value="" placeholder="Поиск" class="form-control input-lg" />
+                  </div>
+                  <div class="input-field col s2">
+                    <button type="button" class="btn btn-search">Найти</button>
+                  </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="row">
+        <div class="col s12 xl10 offset-xl1">
+          <div class="row">
+            <div class="col s3">
+              <div class="row">
+                <div class="col s12">
+                  <div class="card">
+                    <div class="collection">
+                      <a href="#!" class="collection-item">Амуниция <i class="material-icons right">chevron_right</i></a>
+                      <a href="#!" class="collection-item">Контейнеры <i class="material-icons right">chevron_right</i></a>
+                      <a href="#!" class="collection-item">Игрушки <i class="material-icons right">chevron_right</i></a>
+                      <a href="#!" class="collection-item">Одежда <i class="material-icons right">chevron_right</i></a>
+                      <a href="#!" class="collection-item">Обувь <i class="material-icons right">chevron_right</i></a>
+                      <a href="#!" class="collection-item">Аптечка <i class="material-icons right">chevron_right</i></a>
+                      <a href="#!" onclick="toggleCategories()" class="collection-item"><b>Все категории</b></a>
                     </div>
+                  </div>
+                </div>
+                <div class="col s12">
+                  <div class="card">
+                    <div class="card-content">
+                      <i class="material-icons left">shopping_cart</i> <span class="shoping-header">3 вещи в корзине</span>
+                      <div class="row left-panel-tovar">
+                        <div class="col s6">
+                          <img class="responsive-img" src="img/dogspot.png">
+                        </div>
+                        <div class="col s6 tovar-desctription">
+                        <p>Поводок нейлонов...</p>
+                        <b>1 x 360р</b>
+                        </div>
+                      </div>
+                    <div class="row left-panel-tovar">
+                      <div class="col s6">
+                        <img class="responsive-img" src="img/dogspot.png">
+                      </div>
+                      <div class="col s6 tovar-desctription">
+                      <p>Поводок нейлонов...</p>
+                      <b>1 x 360р</b>
+                      </div>
+                    </div>
+                    <div class="row left-panel-tovar">
+                      <div class="col s6">
+                        <img class="responsive-img" src="img/dogspot.png">
+                      </div>
+                      <div class="col s6 tovar-desctription">
+                        <p>Поводок нейлонов...</p>
+                        <b>1 x 360р</b>
+                      </div>
+                    </div>
+                    <div class="oplata">
+                      <div class="row">
+                        <div class="col s6 font20">
+                        Итого: <br />
+                        180р
+                        </div>
+                        <div class="col s6">
+                          <a href="#" class="btn-action">Оформить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12">
+                <div class="card">
+                  <div class="card-content">
+                    <i class="material-icons left">remove_red_eye</i> <span class="shoping-header">Просмотренные</span>
+                    <div class="row left-panel-tovar">
+                      <div class="col s6">
+                        <img class="responsive-img" src="img/dogspot.png">
+                      </div>
+                      <div class="col s6 tovar-desctription">
+                      <p>Поводок нейлонов...</p>
+                      <b>360р</b>
+                      </div>
+                    </div>
+                    <div class="row left-panel-tovar">
+                      <div class="col s6">
+                        <img class="responsive-img" src="img/dogspot.png">
+                      </div>
+                      <div class="col s6 tovar-desctription">
+                      <p>Поводок нейлонов...</p>
+                      <b>360р</b>
+                      </div>
+                    </div>
+                    <div class="row left-panel-tovar">
+                      <div class="col s6">
+                        <img class="responsive-img" src="img/dogspot.png">
+                      </div>
+                      <div class="col s6 tovar-desctription">
+                      <p>Поводок нейлонов...</p>
+                      <b>360р</b>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+          </div>
+          <div class="col s9 relative">	
+            <div class="categories-container card">
+              <div class="row">
+                <div class="col s6">
+                  <b><h6>Контейнеры</h6></b>
+                    <ul>
+                      <li><a href="#!">Амуниция</a></li>
+                      <li><a href="#!">Символика</a></li>
+                      <li><a href="#!">Амуниция</a></li>
+                      <li><a href="#!">Символика</a></li>
+                      <li><a href="#!">Амуниция</a></li>
+                    </ul>
+                </div>
+                <div class="col s6">
+                  <b><h6>Игрушки</h6></b>
+                    <ul>
+                      <li><a href="#!">Амуниция</a></li>
+                      <li><a href="#!">Символика</a></li>
+                      <li><a href="#!">Амуниция</a></li>
+                      <li><a href="#!">Символика</a></li>
+                      <li><a href="#!">Амуниция</a></li>
+                      <li><a href="#!">Символика</a></li>
+                      <li><a href="#!">Амуниция</a></li>
+                      <li><a href="#!">Символика</a></li>
+                      <li><a href="#!">Амуниция</a></li>
+                      <li><a href="#!">Символика</a></li>
+                    </ul>
+                </div>
+                <div class="col s6">
+                  <b><h6>Аптечка</h6></b>
+                    <ul>
+                      <li><a href="#!">Амуниция</a></li>
+                      <li><a href="#!">Символика</a></li>
+                      <li><a href="#!">Амуниция</a></li>
+                      <li><a href="#!">Символика</a></li>
+                      <li><a href="#!">Амуниция</a></li>
+                      <li><a href="#!">Символика</a></li>
+                      <li><a href="#!">Амуниция</a></li>
+                      <li><a href="#!">Символика</a></li>
+                    </ul>
+                </div>
+                <div class="col s6">
+                  <b><h6>Контейнеры</h6></b>
+                    <ul>
+                      <li><a href="#!">Амуниция</a></li>
+                      <li><a href="#!">Символика</a></li>
+                      <li><a href="#!">Амуниция</a></li>
+                      <li><a href="#!">Символика</a></li>
+                      <li><a href="#!">Амуниция</a></li>
+                      <li><a href="#!">Символика</a></li>
+                      <li><a href="#!">Амуниция</a></li>
+                      <li><a href="#!">Символика</a></li>
+                    </ul>
+                </div>
+              </div>
             </div>
-        </div>
-    </main>
-
-    <footer class="page-footer">
-        <div class="footer-copyright">
-            <div class="container">
-                © 2019 Disconf
-                <a class="grey-text text-lighten-4 right" href="#!"></a>
+            <div id="common-home">
+              <div class="official-dis">
+            <img class="responsive-img" style="width: 100%;" src="img/dog2.png">
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  
+                  <div class="row">
+                    <div class="col s4 col-fix">
+                      <h3 class="main-h3">Популярные товары</h3>
+                    </div>
+                    <div class="col s8 col-tabs-main col-fix">
+                      <ul class="tabs tabs-main">
+                        <li class="tab col s3"><a class="active" href="#test1">Storm</a></li>
+                        <li class="tab col s3"><a href="#test2">HST</a></li>
+                        <li class="tab col s3"><a href="#test3">Gappay</a></li>
+                      </ul>
+                    </div>
+                    <div id="test1" class="col s12">
+                      <div class="row">
+                        <div class="col s12 m3">
+                          <div class="card card-main">
+                            <div class="card-image">
+                              <img src="img/dogspot.png">
+                              <span class="card-title">Storm</span>
+                            </div>
+                            <div class="card-content">
+                              <p>I am a very simple card. I am good at containing small bits of information.
+                              I am convenient because I require little markup to use effectively.</p>
+                              <div class="row row-fix">
+                                <div class="col s6 calculation">
+                                  <div>
+                                    <a href="#"><span>+</span></a>
+                                    <span class="kolv">1</span>
+                                    <a href="#"><span>-</span></a>
+                                  </div>  
+                                </div>
+                                <div class="col s6 cennik">
+                                  <div>
+                                    <span>800</span>
+                                    <span>Р</span>
+                                  </div>                      
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-action">
+                              <a href="#">В корзину</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="test2" class="col s12">
+                      <div class="row">
+                        <div class="col s12 m3">
+                          <div class="card card-main">
+                            <div class="card-image">
+                              <img src="img/dogspot.png">
+                              <span class="card-title">Storm</span>
+                            </div>
+                            <div class="card-content">
+                              <p>I am a very simple card. I am good at containing small bits of information.
+                              I am convenient because I require little markup to use effectively.</p>
+                              <div class="row row-fix">
+                                <div class="col s8 calculation">
+                                  <div>
+                                    <a href="#"><span>+</span></a>
+                                    <span class="kolv">1</span>
+                                    <a href="#"><span>-</span></a>
+                                  </div>  
+                                </div>
+                                <div class="col s4 cennik">
+                                  <div>
+                                    <span>800</span>
+                                    <span>Р</span>
+                                  </div>                      
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-action">
+                              <a href="#">В корзину</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col s12 m3">
+                          <div class="card card-main">
+                            <div class="card-image">
+                              <img src="img/dogspot.png">
+                              <span class="card-title">Storm</span>
+                            </div>
+                            <div class="card-content">
+                              <p>I am a very simple card. I am good at containing small bits of information.
+                              I am convenient because I require little markup to use effectively.</p>
+                              <div class="row row-fix">
+                                <div class="col s6 calculation">
+                                  <div>
+                                    <a href="#"><span>+</span></a>
+                                    <span class="kolv">1</span>
+                                    <a href="#"><span>-</span></a>
+                                  </div>  
+                                </div>
+                                <div class="col s6 cennik">
+                                  <div>
+                                    <span>800</span>
+                                    <span>Р</span>
+                                  </div>                      
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-action">
+                              <a href="#">В корзину</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="test3" class="col s12">Test 3</div>
+                    <div class="btn-center-width-main">
+                      <a href="#">Больше популярных товаров</a>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col s12">
+                  <div class="row">
+                    <div class="col s2 col-fix">
+                      <h3 class="main-h3">Новинки</h3>
+                    </div>  
+                    <div class="col s10 col-tabs-main col-fix">
+                      <ul class="tabs tabs-main">
+                      </ul>
+                    </div>
+                    <div class="col s12">
+                      <div class="row">
+                        <div class="col s12 m3">
+                          <div class="card card-main">
+                            <div class="card-image">
+                              <img src="img/dogspot.png">
+                              <span class="card-title">Storm</span>
+                            </div>
+                            <div class="card-content">
+                              <p>I am a very simple card. I am good at containing small bits of information.
+                              I am convenient because I require little markup to use effectively.</p>
+                              <div class="row row-fix">
+                                <div class="col s6 calculation">
+                                  <div>
+                                    <a href="#"><span>+</span></a>
+                                    <span class="kolv">1</span>
+                                    <a href="#"><span>-</span></a>
+                                  </div>  
+                                </div>
+                                <div class="col s6 cennik">
+                                  <div>
+                                    <span>800</span>
+                                    <span>Р</span>
+                                  </div>                      
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-action">
+                              <a href="#">В корзину</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="btn-center-width-main">
+                      <a href="#">Больше новинок</a>
+                    </div>     
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </footer>
-
-    <div id="cubik-preloader">
-        <div id="discoBallLight"></div>
-        <div id="discoBall"><div id="discoBallMiddle"></div></div>
+      </div>
     </div>
-    <script type="text/javascript" src="js/disco.js"></script>
+    <footer class="page-footer">
+      <div class="container">
+      <div class="row">
+        <div class="col s12 xl10 offset-xl1">
+          <div class="row">
+            <div class="col s12 xl6 l10 offset-xl3 offset-l1">
+              <h5 class="white-text center">О нас</h5>
+              <p class="grey-text text-lighten-4 justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                <br /><br />
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+    <footer class="page-footer-down">
+      <div class="footer-copyright">
+        <div class="row row-fix">
+              <div class="col s12 xl10 offset-xl1">
+                <div class="nav-wrapper">
+                    <div class="row row-fix">
+                      <div class="col s10">
+                        <div id="logo-footer" class="left">
+                          <a href="img/logo.png"><img src="img/logo.png" title="1" alt="1" class="img-responsive" /></a>
+                        </div>
+                        <ul>
+                          <li><a href="#">Каталог</a></li>
+                          <li><a href="#">Оплата и доставка</a></li>
+                          <li><a href="#">О нас</a></li>
+                          <li><a href="#">Контакты</a></li>
+                        </ul>
+                      </div>
+                      <div class="col s2 powered">
+                        <span>© Dogsprofi russia</span>
+                      </div>
+                    </div>                  
+                </div>
+              </div>
+            </div>
+      </div>
+    </footer>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>

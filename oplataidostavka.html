@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Disconf</title>
+
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <nav id="top">
+      <div class="row">
+        <div class="col s12 xl10 offset-xl1">
+          <div class="nav-wrapper">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><span class="fake-link"><i class="material-icons tiny left">mail</i>1234@mail.ru</span></li>
+              <li><span class="fake-link"><i class="material-icons tiny left">local_phone</i>123456789</span></li>   
+              <li><a href="{{ shopping_cart }}" title="{{ text_shopping_cart }}"><i class="material-icons tiny left">shopping_cart</i> <span class="hidden-xs hidden-sm hidden-md">Корзина</span></a></li>
+            </ul>
+            <ul id="nav-mobile2" class="left hide-on-med-and-down">
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Оплата и доставка</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <nav>
+        <div class="row">
+          <div class="col s12 xl10 offset-xl1">
+            <div class="nav-wrapper">
+                <div id="logo" class="left">
+                  <a href="img/logo.png"><img src="img/logo.png" title="lorem" alt="lorem" class="img-responsive" /></a>
+                </div>
+                <div class="row search-row">
+                  <div class="col s1">
+                    <button type="button" class="btn btn-search"><i class="material-icons">list</i></button>
+                  </div>
+                  <div id="search" class="input-field col s9">
+                    <i class="material-icons tiny left search-icon">search</i>
+                  <input type="text" id="searchfield" name="search" value="" placeholder="Поиск" class="form-control input-lg" />
+                  </div>
+                  <div class="input-field col s2">
+                    <button type="button" class="btn btn-search">Найти</button>
+                  </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="row">
+        <div class="col s12 xl10 offset-xl1">
+          <div class="row">
+            <div class="col s3">
+              <div class="row">
+                <div class="col s12">
+                  <div class="card">
+                    <div class="card-content">
+                      <i class="material-icons left">shopping_cart</i> <span class="shoping-header">3 вещи в корзине</span>
+                      <div class="row left-panel-tovar">
+                        <div class="col s6">
+                          <img class="responsive-img" src="img/dogspot.png">
+                        </div>
+                        <div class="col s6 tovar-desctription">
+                        <p>Поводок нейлонов...</p>
+                        <b>1 x 360р</b>
+                        </div>
+                      </div>
+                    <div class="row left-panel-tovar">
+                      <div class="col s6">
+                        <img class="responsive-img" src="img/dogspot.png">
+                      </div>
+                      <div class="col s6 tovar-desctription">
+                      <p>Поводок нейлонов...</p>
+                      <b>1 x 360р</b>
+                      </div>
+                    </div>
+                    <div class="row left-panel-tovar">
+                      <div class="col s6">
+                        <img class="responsive-img" src="img/dogspot.png">
+                      </div>
+                      <div class="col s6 tovar-desctription">
+                        <p>Поводок нейлонов...</p>
+                        <b>1 x 360р</b>
+                      </div>
+                    </div>
+                    <div class="oplata">
+                      <div class="row">
+                        <div class="col s6 font20">
+                        Итого: <br />
+                        180р
+                        </div>
+                        <div class="col s6">
+                          <a href="#" class="btn-action">Оформить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12">
+                <div class="card">
+                  <div class="card-content">
+                    <i class="material-icons left">remove_red_eye</i> <span class="shoping-header">Просмотренные</span>
+                    <div class="row left-panel-tovar">
+                      <div class="col s6">
+                        <img class="responsive-img" src="img/dogspot.png">
+                      </div>
+                      <div class="col s6 tovar-desctription">
+                      <p>Поводок нейлонов...</p>
+                      <b>360р</b>
+                      </div>
+                    </div>
+                    <div class="row left-panel-tovar">
+                      <div class="col s6">
+                        <img class="responsive-img" src="img/dogspot.png">
+                      </div>
+                      <div class="col s6 tovar-desctription">
+                      <p>Поводок нейлонов...</p>
+                      <b>360р</b>
+                      </div>
+                    </div>
+                    <div class="row left-panel-tovar">
+                      <div class="col s6">
+                        <img class="responsive-img" src="img/dogspot.png">
+                      </div>
+                      <div class="col s6 tovar-desctription">
+                      <p>Поводок нейлонов...</p>
+                      <b>360р</b>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+          </div>
+          <div class="col s9">	
+            <div id="common-home">
+              <div class="row">
+                <div class="col s12">
+                  <img src="img/car.png" class="responsive-img" alt="">                
+                </div>
+                <div class="col s8">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt 
+                      <br><br>
+                    explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="container">
+      <div class="row">
+        <div class="col s12 xl10 offset-xl1">
+          <div class="row">
+            <div class="col s12 xl6 l10 offset-xl3 offset-l1">
+              <h5 class="white-text center">О нас</h5>
+              <p class="grey-text text-lighten-4 justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                <br /><br />
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+    <footer class="page-footer-down">
+      <div class="footer-copyright">
+        <div class="row row-fix">
+              <div class="col s12 xl10 offset-xl1">
+                <div class="nav-wrapper">
+                    <div class="row row-fix">
+                      <div class="col s10">
+                        <div id="logo-footer" class="left">
+                          <a href="img/logo.png"><img src="img/logo.png" title="1" alt="1" class="img-responsive" /></a>
+                        </div>
+                        <ul>
+                          <li><a href="#">Каталог</a></li>
+                          <li><a href="#">Оплата и доставка</a></li>
+                          <li><a href="#">О нас</a></li>
+                          <li><a href="#">Контакты</a></li>
+                        </ul>
+                      </div>
+                      <div class="col s2 powered">
+                        <span>© Dogsprofi russia</span>
+                      </div>
+                    </div>                  
+                </div>
+              </div>
+            </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
