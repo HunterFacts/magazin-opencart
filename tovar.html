@@ -1,0 +1,481 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин</title>
+
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/nouislider.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <nav id="top">
+      <div class="row">
+        <div class="col s12 xl10 offset-xl1">
+          <div class="nav-wrapper">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><span class="fake-link"><i class="material-icons tiny left">mail</i>1234@mail.ru</span></li>
+              <li><span class="fake-link"><i class="material-icons tiny left">local_phone</i>123456789</span></li>   
+              <li><a href="korzina.html" title="{{ text_shopping_cart }}"><i class="material-icons tiny left">shopping_cart</i> <span class="hidden-xs hidden-sm hidden-md">Корзина</span></a></li>
+            </ul>
+            <ul id="nav-mobile2" class="left hide-on-med-and-down">
+              <li><a href="#">Каталог</a></li>
+              <li><a href="oplataidostavka.html">Оплата и доставка</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <nav>
+        <div class="row">
+          <div class="col s12 xl10 offset-xl1">
+            <div class="nav-wrapper">
+                <div id="logo" class="left">
+                  <a href="index.html"><img src="img/logo.png" title="lorem" alt="lorem" class="img-responsive" /></a>
+                </div>
+                <div class="row search-row">
+                  <div class="col s1">
+                    <button type="button" class="btn btn-search"><i class="material-icons">list</i></button>
+                  </div>
+                  <div id="search" class="input-field col s9">
+                    <i class="material-icons tiny left search-icon">search</i>
+                  <input type="text" id="searchfield" name="search" value="" placeholder="Поиск" class="form-control input-lg" />
+                  </div>
+                  <div class="input-field col s2">
+                    <button type="button" class="btn btn-search">Найти</button>
+                  </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="row">
+        <div class="col s12 xl10 offset-xl1">
+          <div class="row">
+            <div class="col s3">
+              <div class="row">
+                <div class="col s12">
+                  <div class="card">
+                    <div class="card-content">
+                      <span class="shoping-header">Цена</span>
+                      <div class="row">
+                        <div class="col s12 calculation-filter-money">
+                          <div>
+                            от
+                            <span class="ot-filter-money">1</span>
+                            до
+                            <span class="do-filter-money">1</span>
+                            Руб.
+                          </div>  
+                        </div>
+                        <div class="col s12">
+                          <div id="money-filter-range"></div>
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    <span class="shoping-header">Назначение</span>
+                    <div class="row">                      
+                      <div class="col s12">
+                        <ul class="collection border-fix-collection">
+                          <li class="collection-item">
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Для дрессировки</span>
+                              </label>
+                            </p>
+                          </li>
+                          <li class="collection-item">
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Для длительного жевания</span>
+                              </label>
+                            </p>
+                          </li>
+                          <li class="collection-item">
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Дрессировки</span>
+                              </label>
+                            </p>
+                          </li>
+                          <li class="collection-item">
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Для длительного жевания</span>
+                              </label>
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <hr />
+                    <span class="shoping-header">Назначение</span>
+                    <div class="row">                      
+                      <div class="col s12">
+                        <ul class="collection border-fix-collection">
+                          <li class="collection-item">
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Для дрессировки</span>
+                              </label>
+                            </p>
+                          </li>
+                          <li class="collection-item">
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Для длительного жевания</span>
+                              </label>
+                            </p>
+                          </li>
+                          <li class="collection-item">
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Дрессировки</span>
+                              </label>
+                            </p>
+                          </li>
+                          <li class="collection-item">
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Для длительного жевания</span>
+                              </label>
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="col s12">
+                  <div class="card">
+                    <div class="card-content">
+                      <i class="material-icons left">shopping_cart</i> <span class="shoping-header">3 вещи в корзине</span>
+                      <div class="row left-panel-tovar">
+                        <div class="col s6">
+                          <img class="responsive-img" src="img/dogspot.png">
+                        </div>
+                        <div class="col s6 tovar-desctription">
+                        <p>Поводок нейлонов...</p>
+                        <b>1 x 360р</b>
+                        </div>
+                      </div>
+                    <div class="row left-panel-tovar">
+                      <div class="col s6">
+                        <img class="responsive-img" src="img/dogspot.png">
+                      </div>
+                      <div class="col s6 tovar-desctription">
+                      <p>Поводок нейлонов...</p>
+                      <b>1 x 360р</b>
+                      </div>
+                    </div>
+                    <div class="row left-panel-tovar">
+                      <div class="col s6">
+                        <img class="responsive-img" src="img/dogspot.png">
+                      </div>
+                      <div class="col s6 tovar-desctription">
+                        <p>Поводок нейлонов...</p>
+                        <b>1 x 360р</b>
+                      </div>
+                    </div>
+                    <div class="oplata">
+                      <div class="row">
+                        <div class="col s6 font20">
+                        Итого: <br />
+                        180р
+                        </div>
+                        <div class="col s6">
+                          <a href="#" class="btn-action">Оформить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12">
+                <div class="card">
+                  <div class="card-content">
+                    <i class="material-icons left">remove_red_eye</i> <span class="shoping-header">Просмотренные</span>
+                    <div class="row left-panel-tovar">
+                      <div class="col s6">
+                        <img class="responsive-img" src="img/dogspot.png">
+                      </div>
+                      <div class="col s6 tovar-desctription">
+                      <p>Поводок нейлонов...</p>
+                      <b>360р</b>
+                      </div>
+                    </div>
+                    <div class="row left-panel-tovar">
+                      <div class="col s6">
+                        <img class="responsive-img" src="img/dogspot.png">
+                      </div>
+                      <div class="col s6 tovar-desctription">
+                      <p>Поводок нейлонов...</p>
+                      <b>360р</b>
+                      </div>
+                    </div>
+                    <div class="row left-panel-tovar">
+                      <div class="col s6">
+                        <img class="responsive-img" src="img/dogspot.png">
+                      </div>
+                      <div class="col s6 tovar-desctription">
+                      <p>Поводок нейлонов...</p>
+                      <b>360р</b>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+          </div>
+          <div class="col s9">	
+            <div id="common-home">
+              <div class="row">
+                <div class="col s4">
+                  <img src="img/dogspotmain.png" class="responsive-img img-product-main" alt="">      
+                  <div class="overflow-preview">
+                    <div class="overflow-line">
+                      <div class="img-preview" style="background-image: url('img/dogspotmainpreview.png');"></div>
+                      <div class="img-preview" style="background-image: url('img/dogspot.png');"></div>
+                      <div class="img-preview" style="background-image: url('img/dogspotmainpreview.png');"></div>
+                      <div class="img-preview active" style="background-image: url('img/dogspotmainpreview.png');"></div>
+                      <div class="img-preview" style="background-image: url('img/dogspotmain.png');"></div>
+                      <div class="img-preview" style="background-image: url('img/dogspotmainpreview.png');"></div>
+                      <div class="img-preview" style="background-image: url('img/dogspotmainpreview.png');"></div>
+                      <div class="img-preview" style="background-image: url('img/dogspotmainpreview.png');"></div>
+                    </div>      
+                  </div>          
+                </div>
+                <div class="col s8">
+                  <div class="row">
+                    <div class="col s12">
+                      <a href="#!" class="breadcrumb">Все категории</a>
+                      <a href="#!" class="breadcrumb">Категория</a>
+                      <h5>Поводок нейлоновый прорезиненный Storm мягкий, 2 см*1,5 м, красный</h5>
+                    </div> 
+                    <div class="col s8">
+                      <p>
+                        Короткий поводок. Из прорезиненного нейлона. 
+                        С латунным карабином. Яркий цвет.
+                      </p>
+                    </div>
+                    <div class="col s4">
+                      <center>
+                        <h6>Производитель</h6>
+                        <img src="img/storm.png">
+                      </center>
+                    </div>
+                    <div class="col s12 product-main-page">
+                      <div class="shop-cart-text-tovar flex">
+                        <div class="shop-cart-main-text">
+                          <div class="flex space-between">
+                            В наличии 
+                            <div class="cennik">
+                              <div>
+                                <span>8537</span>
+                                <span>руб.</span>
+                              </div>                      
+                            </div>
+                          </div>                         
+                          <div class="shop-cart-main-calculation">
+                            <div class="flex">
+                              <div class="calculation">
+                                <div>
+                                  <a href="#"><span>+</span></a>
+                                  <span class="kolv">1</span>
+                                  <a href="#"><span>-</span></a>
+                                </div>  
+                              </div>
+                            </div>
+                          </div>                          
+                        </div>
+                        <div class="button-buy">
+                          <button class="btn">В корзину</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col s12 l6">
+                      <h6>Характеристики товара</h6>
+                      <ul class="collection fix-collection-color fix-collection-padding border-fix-collection">
+                        <li class="collection-item">
+                          <span>Длинна: 1,5 м</span>
+                        </li>
+                        <li class="collection-item">
+                          <span>Ширина: 1,5 м</span>
+                        </li>
+                        <li class="collection-item">
+                          <span>Цвет: красный</span>
+                        </li>
+                        <li class="collection-item">
+                          <span>Материал: нейлон, резина, латунь</span>
+                        </li>
+                      </ul>
+                    </div>                
+                  </div>
+                  
+                </div>
+                <div class="col s12 col-tabs-main col-fix">
+                  <ul class="tabs tabs-main">
+                    <li class="tab col s3"><a class="active" href="#test1">Описание</a></li>
+                    <li class="tab col s3"><a href="#test2">Отзывы</a></li>
+                  </ul>
+                </div>
+                <div id="test1" class="col s12">
+                  <div class="row">
+                  </div>
+                </div>
+                <div id="test2" class="col s12 comments">
+                  <h5>Отзывы о товаре</h5>
+                  <div class="row">
+                    <div class="input-field col s8">
+                      <textarea id="textarea1" placeholder="Отзыв" rows="4" class="materialize-textarea"></textarea>
+                    </div>
+                    <div class="input-field col s4">
+                      <input id="last_name" placeholder="Ваше имя" type="text" class="validate">
+                      <div class="button-buy">
+                        <button class="btn">Отправить</button>
+                      </div>
+                    </div>
+                    <div class="col s12">
+                      <div class="card-comment">
+                        <h6>Иван И.И</h6>
+                        <span class="text">
+                          Поводок Storm - это очень прочный короткий поводок, из мягкого прорезиненного нейлона с крепким латунным карабином. Поводок Storm очень легкий и компактный, не выскальзывает и не режет руки.
+                        </span>
+                      </div>                     
+                    </div>
+                    <div class="col s12">
+                      <div class="card-comment">
+                        <h6>Иван И.И</h6>
+                        <span class="text">
+                          Поводок Storm - это очень прочный короткий поводок, из мягкого прорезиненного нейлона с крепким латунным карабином. Поводок Storm очень легкий и компактный, не выскальзывает и не режет руки.
+                        </span>
+                      </div>                     
+                    </div>
+                    <div class="col s12">
+                      <div class="card-comment">
+                        <h6>Иван И.И</h6>
+                        <span class="text">
+                          Поводок Storm - это очень прочный короткий поводок, из мягкого прорезиненного нейлона с крепким латунным карабином. Поводок Storm очень легкий и компактный, не выскальзывает и не режет руки.
+                        </span>
+                      </div>                     
+                    </div>
+                    <div class="col s12">
+                      <div class="card-comment pagination">
+                        <ul class="pagination">
+                          <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                          <li class="active"><a href="#!">1</a></li>
+                          <li class="waves-effect"><a href="#!">2</a></li>
+                          <li class="waves-effect"><a href="#!">3</a></li>
+                          <li class="waves-effect"><a href="#!">4</a></li>
+                          <li class="waves-effect"><a href="#!">5</a></li>
+                          <li class="waves-effect"><a href="#!">6</a></li>
+                          <li class="waves-effect"><a href="#!">7</a></li>
+                          <li class="waves-effect"><a href="#!">8</a></li>
+                          <li class="waves-effect"><a href="#!">9</a></li>
+                          <li class="waves-effect"><a href="#!">10</a></li>
+                          <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                        </ul>
+                      </div>                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="container">
+      <div class="row">
+        <div class="col s12 xl10 offset-xl1">
+          <div class="row">
+            <div class="col s12 xl6 l10 offset-xl3 offset-l1">
+              <h5 class="white-text center">О нас</h5>
+              <p class="grey-text text-lighten-4 justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                <br /><br />
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+    <footer class="page-footer-down">
+      <div class="footer-copyright">
+        <div class="row row-fix">
+              <div class="col s12 xl10 offset-xl1">
+                <div class="nav-wrapper">
+                    <div class="row row-fix">
+                      <div class="col s10">
+                        <div id="logo-footer" class="left">
+                          <a href="img/logo.png"><img src="img/logo.png" title="1" alt="1" class="img-responsive" /></a>
+                        </div>
+                        <ul>
+                          <li><a href="#">Каталог</a></li>
+                          <li><a href="#">Оплата и доставка</a></li>
+                          <li><a href="#">О нас</a></li>
+                          <li><a href="#">Контакты</a></li>
+                        </ul>
+                      </div>
+                      <div class="col s2 powered">
+                        <span>© Dogsprofi russia</span>
+                      </div>
+                    </div>                  
+                </div>
+              </div>
+            </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js//nouislider.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+      var slider = document.getElementById('money-filter-range');
+      noUiSlider.create(slider, {
+        start: [16, 1006],
+        connect: true,
+        step: 1,
+        orientation: 'horizontal', // 'horizontal' or 'vertical'
+        range: {
+          'min': 1,
+          'max': 1200
+        },
+      });
+      slider.noUiSlider.on('update', function (values) {
+        $('.ot-filter-money').text(Math.floor(values[0]));
+        $('.do-filter-money').text(Math.floor(values[1]));
+      });
+      $('.img-preview').click(function(){
+        if ($(this).attr("class") !== 'img-preview active'){
+          $('.img-preview.active').attr('class', 'img-preview');
+          $(this).attr("class", 'img-preview active');
+          $('.img-product-main').attr('src', $(this).css('background-image').slice(5, -2));
+        }       
+      });
+      M.textareaAutoResize($('#textarea1'));
+    </script>
+  </body>
+</html>

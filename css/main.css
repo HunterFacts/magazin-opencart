@@ -118,7 +118,7 @@ header nav .search-row #searchfield {
 	padding-left: 40px;
 	padding-right: 30px;
 	width: calc(100% - 70px);
-  height: 2.5rem;
+  	height: 2.5rem;
 	display: block;
 }
 header nav .search-row .search-icon {
@@ -133,7 +133,7 @@ header nav .search-row .search-icon {
 header nav .search-row .btn-search {
 	width: 100%;
 	background: rgb(172,142,79);
-  background: linear-gradient(90deg, rgba(172,142,79,1) 0%, rgba(189,169,91,1) 50%, rgba(172,142,79,1) 100%);
+  	background: linear-gradient(90deg, rgba(172,142,79,1) 0%, rgba(189,169,91,1) 50%, rgba(172,142,79,1) 100%);
 	display: block;
 	box-shadow: none;
 }
@@ -221,9 +221,7 @@ body .tabs-main>li.tab .active:target{
 .tabs-main .indicator {
 	display: none;
 }
-.col-tabs-main{
 
-}
 body .row .col-fix {
 	padding-left: 0;
 	padding-right: 0;
@@ -414,4 +412,176 @@ body .row .col-fix {
 }
 .collection a.collection-item, a {
   color: black;
+}
+.ot-filter-money, .do-filter-money  {
+	display: inline-block;
+	border: 1px solid #8f7435;
+	border-radius: 4px;
+	padding: 0 15px;
+	
+}
+.calculation-filter-money>div{
+	display: flex;
+	justify-content: space-around;
+	line-height: 32px;
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+.noUi-handle {
+	border-radius: 50%;
+	background-color: #cdaa3d;
+	outline:none;
+	cursor: pointer;
+	box-shadow: none;
+	border: none;
+}
+.noUi-handle:before, .noUi-handle:after, .noUi-touch-area {
+	display: none;
+}
+.noUi-connect {
+	background-color: #e4bf4d;
+}
+.noUi-target {
+	background-color: #1c4a6a;
+	border: none;
+	box-shadow: none;
+	border-radius: 1rem;
+}
+.noUi-horizontal .noUi-handle {
+	width: 24px;
+	height: 30px;
+}
+.border-fix-collection {
+	border: none;
+}
+.border-fix-collection li.collection-item {
+	border: none;
+}
+.fix-collection-color {
+	background: none;
+}
+.fix-collection-color li.collection-item{
+	background: none;
+}
+.fix-collection-padding li.collection-item {
+	padding: 5px 0;
+}
+[type="checkbox"]:checked + span:not(.lever):before {
+	border-right: 2px solid #e4bf4d;
+    border-bottom: 2px solid #e4bf4d;
+}
+#common-home .breadcrumb, #common-home .breadcrumb:before {
+	color: black;
+}
+.row .product-main-page {
+	margin: 20px 0;
+}
+.row .product-main-page .shop-cart-main-text {
+	margin: 0;
+	font-weight: normal;
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	padding: 20px 20px;
+}
+.row .product-main-page .cennik {
+	font-weight: bold;
+	margin-left: 1rem;
+	font-size: 24px;
+}
+.row .product-main-page .shop-cart-text-tovar {	
+	background-color: #ded3bf;
+}
+.row .product-main-page .shop-cart-main-calculation {
+	margin-left: 0;
+	min-width: auto;
+}
+.row .product-main-page .calculation a{
+	color: #8f7435;
+	font-size: 24px;
+}
+.row .product-main-page .calculation .kolv{
+	color: black;
+	border: black 1px solid;
+	font-size: 24px;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+.space-between {
+	justify-content: space-between;
+}
+.button-buy {
+	width: 30%;
+}
+.button-buy .btn {
+	width: 100%;
+    background: rgb(172,142,79);
+    background: linear-gradient(90deg, rgba(172,142,79,1) 0%, rgba(189,169,91,1) 50%, rgba(172,142,79,1) 100%);
+    display: block;
+	box-shadow: none;
+	height: 100%;
+}
+.overflow-preview {
+	width: 100%;
+	/*max-width: 100%;*/
+	overflow-x: auto;
+}
+.overflow-preview .img-preview {
+	width: 75px;
+	height: 75px;
+	background-color: white;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	margin-right: 5px;
+	min-width: 75px;
+}
+.overflow-preview .img-preview.active {
+	border: 1px solid orange;
+}
+.overflow-line {
+	min-width: 100%;
+	width: auto;
+	min-height: 100px;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+}
+.img-product-main {
+	width: 100%;
+}
+
+.comments .row .input-field input, .comments textarea {
+	background-color: white;
+	border: none;
+	padding: 0 10px;
+	height: 45px;
+	width: calc(100% - 20px);
+}
+.comments textarea {
+	background-color: white;
+	height: 100px;
+	min-height: 100px;
+	border: none;
+	padding: 10px;
+}
+.comments .button-buy {
+	width: 100%;
+	height: 47px;
+}
+.row .card-comment {
+	background-color: #ded3bf;
+	padding: 10px 20px;
+	min-height: 100px;
+	margin: 10px 0;
+}
+.row .card-comment.pagination {
+	display: flex;
+	justify-content: center;
+	min-height: auto;
+}
+.pagination li.active {
+	background: rgb(172,142,79);
+    background: linear-gradient(90deg, rgba(172,142,79,1) 0%, rgba(189,169,91,1) 50%, rgba(172,142,79,1) 100%);
 }
