@@ -1,7 +1,7 @@
 M.AutoInit();
 
 function toggleCategories(){
-  $('.categories-container').toggle('slow');
+  $('.categories-container').toggle();
 }
 
         
