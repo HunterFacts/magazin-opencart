@@ -12,17 +12,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
-    <nav id="top">
+    <nav id="top" class="hide-on-med-and-down">
       <div class="row">
         <div class="col s12 xl10 offset-xl1">
           <div class="nav-wrapper">
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <ul id="nav-mobile" class="right ">
               <li><span class="fake-link"><i class="material-icons tiny left">mail</i>1234@mail.ru</span></li>
               <li><span class="fake-link"><i class="material-icons tiny left">local_phone</i>123456789</span></li>   
               <li><a href="korzina.html" title="{{ text_shopping_cart }}"><i class="material-icons tiny left">shopping_cart</i> <span class="hidden-xs hidden-sm hidden-md">Корзина</span></a></li>
             </ul>
-            <ul id="nav-mobile2" class="left hide-on-med-and-down">
-              <li><a href="#">Каталог</a></li>
+            <ul id="nav-mobile2" class="left">
+              <li><a href="vsekategory.html">Каталог</a></li>
               <li><a href="oplataidostavka.html">Оплата и доставка</a></li>
               <li><a href="#">О нас</a></li>
               <li><a href="#">Контакты</a></li>
@@ -39,15 +39,13 @@
                 <div id="logo" class="left">
                   <a href="index.html"><img src="img/logo.png" title="lorem" alt="lorem" class="img-responsive" /></a>
                 </div>
-                <div class="row search-row">
-                  <div class="col s1">
-                    <button type="button" class="btn btn-search"><i class="material-icons">list</i></button>
-                  </div>
-                  <div id="search" class="input-field col s9">
+                <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <div class="row search-row hide-on-med-and-down"">
+                  <div id="search" class="input-field col s12 m10">
                     <i class="material-icons tiny left search-icon">search</i>
                   <input type="text" id="searchfield" name="search" value="" placeholder="Поиск" class="form-control input-lg" />
                   </div>
-                  <div class="input-field col s2">
+                  <div class="input-field col s12 m2">
                     <button type="button" class="btn btn-search">Найти</button>
                   </div>
                   </div>
@@ -57,10 +55,35 @@
         </div>
       </nav>
     </header>
+    <ul class="sidenav" id="mobile">
+      <li><a href="vsekategory.html">Каталог</a></li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li><a href="oplataidostavka.html">Оплата и доставка</a></li>
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Контакты</a></li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown-mobile-category">Категории<i class="material-icons right">arrow_drop_down</i></a></li>
+      <ul id='dropdown-mobile-category' class='dropdown-content'>
+        <li><a href="#!">Амуниция</a></li>
+        <li><a href="#!">Контейнеры</a></li>
+        <li><a href="#!">Игрушки</a></li>
+        <li><a href="tovars.html">Одежда</a></li>
+        <li><a href="tovars.html">Обувь</a></li>
+        <li><a href="#!"><b>Все категории</b></a></li>
+      </ul>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li><a href="korzina.html">Корзина (3)</a></li>
+    </ul>
     <div class="row">
         <div class="col s12 xl10 offset-xl1">
           <div class="row">
-            <div class="col s3">
+            <div class="col s3 hide-on-med-and-down">
               <div class="row">
                 <div class="col s12">
                   <div class="card">
@@ -245,10 +268,10 @@
               </div>
             </div>     
           </div>
-          <div class="col s9">	
+          <div class="col s12 l9">	
             <div id="common-home">
               <div class="row">
-                <div class="col s4">
+                <div class="col s12 m4">
                   <img src="img/dogspotmain.png" class="responsive-img img-product-main" alt="">      
                   <div class="overflow-preview">
                     <div class="overflow-line">
@@ -263,20 +286,20 @@
                     </div>      
                   </div>          
                 </div>
-                <div class="col s8">
+                <div class="col s12 m8">
                   <div class="row">
                     <div class="col s12">
                       <a href="#!" class="breadcrumb">Все категории</a>
                       <a href="#!" class="breadcrumb">Категория</a>
                       <h5>Поводок нейлоновый прорезиненный Storm мягкий, 2 см*1,5 м, красный</h5>
                     </div> 
-                    <div class="col s8">
+                    <div class="col s12 m8">
                       <p>
                         Короткий поводок. Из прорезиненного нейлона. 
                         С латунным карабином. Яркий цвет.
                       </p>
                     </div>
-                    <div class="col s4">
+                    <div class="col s12 m8">
                       <center>
                         <h6>Производитель</h6>
                         <img src="img/storm.png">
@@ -344,10 +367,10 @@
                 <div id="test2" class="col s12 comments">
                   <h5>Отзывы о товаре</h5>
                   <div class="row">
-                    <div class="input-field col s8">
+                    <div class="input-field col s12 m8">
                       <textarea id="textarea1" placeholder="Отзыв" rows="4" class="materialize-textarea"></textarea>
                     </div>
-                    <div class="input-field col s4">
+                    <div class="input-field col s12 m4">
                       <input id="last_name" placeholder="Ваше имя" type="text" class="validate">
                       <div class="button-buy">
                         <button class="btn">Отправить</button>
@@ -427,18 +450,18 @@
               <div class="col s12 xl10 offset-xl1">
                 <div class="nav-wrapper">
                     <div class="row row-fix">
-                      <div class="col s10">
+                      <div class="col s12 m10">
                         <div id="logo-footer" class="left">
                           <a href="img/logo.png"><img src="img/logo.png" title="1" alt="1" class="img-responsive" /></a>
                         </div>
-                        <ul>
+                        <ul class="hide-on-med-and-down"">
                           <li><a href="#">Каталог</a></li>
                           <li><a href="#">Оплата и доставка</a></li>
                           <li><a href="#">О нас</a></li>
                           <li><a href="#">Контакты</a></li>
                         </ul>
                       </div>
-                      <div class="col s2 powered">
+                      <div class="col s12 m2 powered">
                         <span>© Dogsprofi russia</span>
                       </div>
                     </div>                  

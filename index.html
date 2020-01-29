@@ -11,16 +11,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
-    <nav id="top">
+    <nav id="top" class="hide-on-med-and-down">
       <div class="row">
         <div class="col s12 xl10 offset-xl1">
           <div class="nav-wrapper">
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <ul id="nav-mobile" class="right ">
               <li><span class="fake-link"><i class="material-icons tiny left">mail</i>1234@mail.ru</span></li>
               <li><span class="fake-link"><i class="material-icons tiny left">local_phone</i>123456789</span></li>   
               <li><a href="korzina.html" title="{{ text_shopping_cart }}"><i class="material-icons tiny left">shopping_cart</i> <span class="hidden-xs hidden-sm hidden-md">Корзина</span></a></li>
             </ul>
-            <ul id="nav-mobile2" class="left hide-on-med-and-down">
+            <ul id="nav-mobile2" class="left">
               <li><a href="vsekategory.html">Каталог</a></li>
               <li><a href="oplataidostavka.html">Оплата и доставка</a></li>
               <li><a href="#">О нас</a></li>
@@ -38,12 +38,13 @@
                 <div id="logo" class="left">
                   <a href="index.html"><img src="img/logo.png" title="lorem" alt="lorem" class="img-responsive" /></a>
                 </div>
-                <div class="row search-row">
-                  <div id="search" class="input-field col s10">
+                <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <div class="row search-row hide-on-med-and-down"">
+                  <div id="search" class="input-field col s12 m10">
                     <i class="material-icons tiny left search-icon">search</i>
                   <input type="text" id="searchfield" name="search" value="" placeholder="Поиск" class="form-control input-lg" />
                   </div>
-                  <div class="input-field col s2">
+                  <div class="input-field col s12 m2">
                     <button type="button" class="btn btn-search">Найти</button>
                   </div>
                   </div>
@@ -53,14 +54,39 @@
         </div>
       </nav>
     </header>
+    <ul class="sidenav" id="mobile">
+      <li><a href="vsekategory.html">Каталог</a></li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li><a href="oplataidostavka.html">Оплата и доставка</a></li>
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Контакты</a></li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown-mobile-category">Категории<i class="material-icons right">arrow_drop_down</i></a></li>
+      <ul id='dropdown-mobile-category' class='dropdown-content'>
+        <li><a href="#!">Амуниция</a></li>
+        <li><a href="#!">Контейнеры</a></li>
+        <li><a href="#!">Игрушки</a></li>
+        <li><a href="tovars.html">Одежда</a></li>
+        <li><a href="tovars.html">Обувь</a></li>
+        <li><a href="#!"><b>Все категории</b></a></li>
+      </ul>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li><a href="korzina.html">Корзина (3)</a></li>
+    </ul>
     <div class="row">
         <div class="col s12 xl10 offset-xl1">
           <div class="row">
-            <div class="col s3">
+            <div class="col s3 hide-on-med-and-down">
               <div class="row">
                 <div class="col s12">
                   <div class="card">
-                    <div class="collection">
+                    <div class="collection fs18">
                       <a href="#!" class="collection-item">Амуниция <i class="material-icons right">chevron_right</i></a>
                       <a href="#!" class="collection-item">Контейнеры <i class="material-icons right">chevron_right</i></a>
                       <a href="#!" class="collection-item">Игрушки <i class="material-icons right">chevron_right</i></a>
@@ -74,14 +100,14 @@
                 <div class="col s12">
                   <div class="card">
                     <div class="card-content">
-                      <i class="material-icons left">shopping_cart</i> <span class="shoping-header">3 вещи в корзине</span>
+                      <span class="col-brown"><i class="material-icons left">shopping_cart</i></span> <span class="shoping-header"><span class="col-brown">3 вещи</span> в корзине</span>
                       <div class="row left-panel-tovar">
                         <div class="col s6">
                           <img class="responsive-img" src="img/dogspot.png">
                         </div>
                         <div class="col s6 tovar-desctription">
                         <p>Поводок нейлонов...</p>
-                        <b>1 x 360р</b>
+                        <span class="col-brown">1 x 360р</span>
                         </div>
                       </div>
                     <div class="row left-panel-tovar">
@@ -90,7 +116,7 @@
                       </div>
                       <div class="col s6 tovar-desctription">
                       <p>Поводок нейлонов...</p>
-                      <b>1 x 360р</b>
+                      <span class="col-brown">1 x 360р</span>
                       </div>
                     </div>
                     <div class="row left-panel-tovar">
@@ -99,14 +125,14 @@
                       </div>
                       <div class="col s6 tovar-desctription">
                         <p>Поводок нейлонов...</p>
-                        <b>1 x 360р</b>
+                        <span class="col-brown">1 x 360р</span>
                       </div>
                     </div>
                     <div class="oplata">
                       <div class="row">
                         <div class="col s6 font20">
-                        Итого: <br />
-                        180р
+                        <span class="text-total">Итого: </span><br />
+                        <span class="col-brown">1500 руб.</span>
                         </div>
                         <div class="col s6">
                           <a href="#" class="btn-action">Оформить</a>
@@ -119,14 +145,14 @@
               <div class="col s12">
                 <div class="card">
                   <div class="card-content">
-                    <i class="material-icons left">remove_red_eye</i> <span class="shoping-header">Просмотренные</span>
+                    <span class="col-brown"><i class="material-icons left">remove_red_eye</i></span> <span class="shoping-header">Просмотренные</span>
                     <div class="row left-panel-tovar">
                       <div class="col s6">
                         <img class="responsive-img" src="img/dogspot.png">
                       </div>
                       <div class="col s6 tovar-desctription">
                       <p>Поводок нейлонов...</p>
-                      <b>360р</b>
+                      <span class="col-brown">548 руб.</span>
                       </div>
                     </div>
                     <div class="row left-panel-tovar">
@@ -135,7 +161,7 @@
                       </div>
                       <div class="col s6 tovar-desctription">
                       <p>Поводок нейлонов...</p>
-                      <b>360р</b>
+                      <span class="col-brown">548 руб.</span>
                       </div>
                     </div>
                     <div class="row left-panel-tovar">
@@ -144,15 +170,15 @@
                       </div>
                       <div class="col s6 tovar-desctription">
                       <p>Поводок нейлонов...</p>
-                      <b>360р</b>
+                      <span class="col-brown">548 руб.</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>     
-          </div>
-          <div class="col s9 relative">	
+            </div>
+          <div class="col s12 m12 l9 xl9 relative">	
             <div class="categories-container card">
               <div class="row">
                 <div class="col s6">
@@ -209,46 +235,48 @@
               </div>
             </div>
             <div id="common-home">
-              <div class="official-dis">
-            <img class="responsive-img" style="width: 100%;" src="img/dog2.png">
+              <div class="official-dis hide-on-small-only">
+            <img class="responsive-img" style="width: 100%; " src="img/dog2.png">
               </div>
               <div class="row">
-                <div class="col s12">
-                  
-                  <div class="row">
-                    <div class="col s4 col-fix">
-                      <h3 class="main-h3">Популярные товары</h3>
-                    </div>
-                    <div class="col s8 col-tabs-main col-fix">
-                      <ul class="tabs tabs-main">
-                        <li class="tab col s3"><a class="active" href="#test1">Storm</a></li>
-                        <li class="tab col s3"><a href="#test2">HST</a></li>
-                        <li class="tab col s3"><a href="#test3">Gappay</a></li>
-                      </ul>
-                    </div>
+                <div class="col s12">              
+                  <div class="row">                  
+                    <div class="line-container">
+                      <div class="line-block">
+                        <h3 class="main-h3">Популярные товары</h3>
+                      </div>
+                      <div class="line-block">
+                        <ul class="tabs tabs-main">
+                          <li class="tab"><a class="active" href="#test1">Storm</a></li>
+                          <li class="tab"><a href="#test2">HST</a></li>
+                          <li class="tab"><a href="#test3">Gappay</a></li>
+                        </ul>
+                      </div>
+                    </div>                  
                     <div id="test1" class="col s12">
                       <div class="row">
-                        <div class="col s12 m3">
+                        <div class="col s12 m4 l3">
                           <div class="card card-main">
                             <div class="card-image">
                               <a href="tovar.html"><img src="img/dogspot.png"></a>
                               <span class="card-title">Storm</span>
                             </div>
                             <div class="card-content">
-                              <p>I am a very simple card. I am good at containing small bits of information.
-                              I am convenient because I require little markup to use effectively.</p>
+                              <p>Поводок нейлоновый 
+                                прорезиненный Storm 
+                                мягкий, 2 см*1,5 м, красный</p>
                               <div class="row row-fix">
                                 <div class="col s6 calculation">
                                   <div>
-                                    <a href="#"><span>+</span></a>
+                                    <a><span class="plus">+</span></a>
                                     <span class="kolv">1</span>
-                                    <a href="#"><span>-</span></a>
+                                    <a><span class="minus">-</span></a>
                                   </div>  
                                 </div>
                                 <div class="col s6 cennik">
                                   <div>
                                     <span>800</span>
-                                    <span>Р</span>
+                                    <span>Р.</span>
                                   </div>                      
                                 </div>
                               </div>
@@ -262,27 +290,28 @@
                     </div>
                     <div id="test2" class="col s12">
                       <div class="row">
-                        <div class="col s12 m3">
+                        <div class="col s12 m4 l3">
                           <div class="card card-main">
                             <div class="card-image">
-                              <img src="img/dogspot.png">
+                              <a href="tovar.html"><img src="img/dogspot.png"></a>
                               <span class="card-title">Storm</span>
                             </div>
                             <div class="card-content">
-                              <p>I am a very simple card. I am good at containing small bits of information.
-                              I am convenient because I require little markup to use effectively.</p>
+                              <p>Поводок нейлоновый 
+                                прорезиненный Storm 
+                                мягкий, 2 см*1,5 м, красный</p>
                               <div class="row row-fix">
-                                <div class="col s8 calculation">
+                                <div class="col s6 calculation">
                                   <div>
-                                    <a href="#"><span>+</span></a>
+                                    <a><span class="plus">+</span></a>
                                     <span class="kolv">1</span>
-                                    <a href="#"><span>-</span></a>
+                                    <a><span class="minus">-</span></a>
                                   </div>  
                                 </div>
-                                <div class="col s4 cennik">
+                                <div class="col s6 cennik">
                                   <div>
                                     <span>800</span>
-                                    <span>Р</span>
+                                    <span>Р.</span>
                                   </div>                      
                                 </div>
                               </div>
@@ -292,27 +321,28 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col s12 m3">
+                        <div class="col s12 m4 l3">
                           <div class="card card-main">
                             <div class="card-image">
-                              <img src="img/dogspot.png">
+                              <a href="tovar.html"><img src="img/dogspot.png"></a>
                               <span class="card-title">Storm</span>
                             </div>
                             <div class="card-content">
-                              <p>I am a very simple card. I am good at containing small bits of information.
-                              I am convenient because I require little markup to use effectively.</p>
+                              <p>Поводок нейлоновый 
+                                прорезиненный Storm 
+                                мягкий, 2 см*1,5 м, красный</p>
                               <div class="row row-fix">
                                 <div class="col s6 calculation">
                                   <div>
-                                    <a href="#"><span>+</span></a>
+                                    <a><span class="plus">+</span></a>
                                     <span class="kolv">1</span>
-                                    <a href="#"><span>-</span></a>
+                                    <a><span class="minus">-</span></a>
                                   </div>  
                                 </div>
                                 <div class="col s6 cennik">
                                   <div>
                                     <span>800</span>
-                                    <span>Р</span>
+                                    <span>Р.</span>
                                   </div>                      
                                 </div>
                               </div>
@@ -333,36 +363,39 @@
                 </div>
                 <div class="col s12">
                   <div class="row">
-                    <div class="col s2 col-fix">
-                      <h3 class="main-h3">Новинки</h3>
-                    </div>  
-                    <div class="col s10 col-tabs-main col-fix">
-                      <ul class="tabs tabs-main">
-                      </ul>
+                    <div class="line-container">
+                      <div class="line-block">
+                        <h3 class="main-h3">Новинки</h3>
+                      </div>  
+                      <div class="line-block">
+                        <ul class="tabs tabs-main">
+                        </ul>
+                      </div>
                     </div>
                     <div class="col s12">
                       <div class="row">
-                        <div class="col s12 m3">
+                        <div class="col s12 m4 l3">
                           <div class="card card-main">
                             <div class="card-image">
-                              <img src="img/dogspot.png">
+                              <a href="tovar.html"><img src="img/dogspot.png"></a>
                               <span class="card-title">Storm</span>
                             </div>
                             <div class="card-content">
-                              <p>I am a very simple card. I am good at containing small bits of information.
-                              I am convenient because I require little markup to use effectively.</p>
+                              <p>Поводок нейлоновый 
+                                прорезиненный Storm 
+                                мягкий, 2 см*1,5 м, красный</p>
                               <div class="row row-fix">
                                 <div class="col s6 calculation">
                                   <div>
-                                    <a href="#"><span>+</span></a>
+                                    <a><span class="plus">+</span></a>
                                     <span class="kolv">1</span>
-                                    <a href="#"><span>-</span></a>
+                                    <a><span class="minus">-</span></a>
                                   </div>  
                                 </div>
                                 <div class="col s6 cennik">
                                   <div>
                                     <span>800</span>
-                                    <span>Р</span>
+                                    <span>Р.</span>
                                   </div>                      
                                 </div>
                               </div>
@@ -409,18 +442,18 @@
               <div class="col s12 xl10 offset-xl1">
                 <div class="nav-wrapper">
                     <div class="row row-fix">
-                      <div class="col s10">
+                      <div class="col s12 m10">
                         <div id="logo-footer" class="left">
                           <a href="img/logo.png"><img src="img/logo.png" title="1" alt="1" class="img-responsive" /></a>
                         </div>
-                        <ul>
+                        <ul class="hide-on-med-and-down"">
                           <li><a href="#">Каталог</a></li>
                           <li><a href="#">Оплата и доставка</a></li>
                           <li><a href="#">О нас</a></li>
                           <li><a href="#">Контакты</a></li>
                         </ul>
                       </div>
-                      <div class="col s2 powered">
+                      <div class="col s12 m2 powered">
                         <span>© Dogsprofi russia</span>
                       </div>
                     </div>                  
