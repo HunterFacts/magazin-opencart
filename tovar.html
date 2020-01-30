@@ -220,11 +220,11 @@
                     </div>
                     <div class="oplata">
                       <div class="row">
-                        <div class="col s6 font20">
+                        <div class="col s12 xl4 font20">
                         Итого: <br />
                         180р
                         </div>
-                        <div class="col s6">
+                        <div class="col s12 xl8">
                           <a href="#" class="btn-action">Оформить</a>
                         </div>
                       </div>
@@ -272,7 +272,7 @@
             <div id="common-home">
               <div class="row">
                 <div class="col s12 m4">
-                  <img src="img/dogspotmain.png" class="responsive-img img-product-main" alt="">      
+                  <img src="img/dogspotmain.png" class="responsive-img img-product-main materialboxed" alt="">      
                   <div class="overflow-preview">
                     <div class="overflow-line">
                       <div class="img-preview" style="background-image: url('img/dogspotmainpreview.png');"></div>
@@ -476,6 +476,7 @@
     <script type="text/javascript" src="js//nouislider.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script>
+      $('.materialboxed').materialbox();
       var slider = document.getElementById('money-filter-range');
       noUiSlider.create(slider, {
         start: [16, 1006],
@@ -496,6 +497,7 @@
           $('.img-preview.active').attr('class', 'img-preview');
           $(this).attr("class", 'img-preview active');
           $('.img-product-main').attr('src', $(this).css('background-image').slice(5, -2));
+          $('.materialboxed').materialbox();
         }       
       });
       M.textareaAutoResize($('#textarea1'));
